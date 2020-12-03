@@ -1,0 +1,94 @@
+.header-navigation {
+    display: flex;
+    justify-content: center;
+}
+
+.main-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+}
+
+.nav-item {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main-menu-list {
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+
+}
+
+.main-menu-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: left;
+    position: relative;
+    max-width: 150px;
+
+}
+
+.main-menu-item__link,
+.main-menu-submenu__link,
+.footer-menu__link,
+.footer-submenu__link {
+    text-decoration: none;
+    color: $secondary-text-color;
+
+}
+
+.main-menu-item__link {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.main-menu-item__link::after {
+    content: "";
+    background-image: url(../img/Vector-white.png);
+    background-repeat: no-repeat;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.main-menu-item:hover {
+    background-color: $secondary-color;
+}
+
+.main-menu-item__link:hover {
+    color: $primary-text-color;
+
+}
+
+.main-menu-item__link:hover::after {
+    content: "";
+    background-image: url(../img/Vector.png);
+}
+
+.main-menu-submenu__list {
+    position: absolute;
+    top: 90px;
+    background-color: $secondary-color;
+
+}
+
+.main-menu-submenu__link {
+    display: inline-block;
+    color: $primary-text-color;
+    width: 300px;
+    padding: 15px;
+}
+
+.iconify {
+    font-size: 32px;
+}
