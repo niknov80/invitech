@@ -27,6 +27,7 @@ let path = {
         js: source_folder + '/js/script.js',
         img: source_folder + '/img/**/*.{jpg,png,svg,gif,ico,webp}',
         fonts: source_folder + '/fonts/*.ttf',
+        icons: source_folder + '/img/',
     },
 
     watch: {
@@ -163,12 +164,12 @@ gulp.task('svgSprite', function(){
     .pipe(svgSprite({
         mode: {
             stack: {
-                sprite: '../icons/icons.svg',
-                example: true
+                sprite: '../icons.svg',
+                // example: true
             }
         }
     }))
-    .pipe(dest(path.build.img))
+    .pipe(dest(path.src.icons))
 })
 
 function fontsStyle(params) {
