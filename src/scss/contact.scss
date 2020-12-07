@@ -1,0 +1,58 @@
+
+/* КОНТАКТЫ */
+.contact-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-content__header{
+    font-size: 24px;
+    color: $header-text-color;
+}
+
+.contact-content__text{
+    color: $body-text-color;
+    display: flex;
+    align-items: center;
+    line-height: 24px;
+    
+}
+
+.contact-content__text--addres::before{
+    content: "";
+    display: inline-block;
+    background-image: url(../img/icons.svg#address);
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 44px;
+}
+
+.contact-content__text--tel::before{
+    content: "";
+    display: inline-block;
+    background-image: url(../img/icons.svg#tel);
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 44px;
+}
+
+.contact-content__text--time::before{
+    content: "";
+    display: inline-block;
+    background-image: url(../img/icons.svg#time);
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 44px;
+}
+
+.contact-content__text--email::before{
+    content: "";
+    display: inline-block;
+    background-image: url(../img/icons.svg#email);
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 44px;
+}

@@ -165,7 +165,7 @@ gulp.task('svgSprite', function(){
         mode: {
             stack: {
                 sprite: '../icons.svg',
-                // example: true
+                example: true
             }
         }
     }))
