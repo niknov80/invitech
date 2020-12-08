@@ -1,3 +1,6 @@
+main{
+    width: 100%;
+}
 /* НАШИ НОВИНКИ */
 
 .new-item{
@@ -41,6 +44,90 @@
     
 }
 
+/* ПРОМО */
+.promo{
+    // width: 100%;
+    // height: 700px;
+    // background-image: url(../img/bg.jpg);
+}
+
+.promo-overlay{
+    
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+    picture{
+        
+        height: 300px;
+    }
+
+    picture img{
+        
+        height: 100%;
+    }
+    .promo-text{
+        position: absolute;
+        top: 40px;
+        left: 150px;
+        font-size: 46px;
+        color: white;
+    } 
+}
+
+.promo-overlay--dark{
+    background-color: rgba(34, 34, 34, 0.9);
+}
+
+.promo-overlay--light{
+    background-color: rgba(0, 95, 131, 0.9);
+}
+
+
+
+
+.promo-video{
+    width: 100%;
+    height: 700px;
+    background-image: url(../img/bg.jpg);
+   
+}
+
+.promo-foreground{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: brightness(0.80);
+}
+
+
+
+.promo-switcher{
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    gap: 15px;
+    
+}
+
+.promo-switcher__item{
+    background-color: #fff;
+    padding: 3px 6px;
+    cursor: pointer;
+    opacity: .6;
+}
+
+.promo-switcher__item--active{
+    opacity: 1;
+}
 /* РАЗДЕЛИТЕЛЬ */
 
 .separator__block{

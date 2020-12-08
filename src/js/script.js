@@ -28,6 +28,8 @@ $(function(){
         }
     );
 
+    
+
     var mySwiper = new Swiper('.corusel', {
         on: {
             init: function () {
@@ -106,6 +108,24 @@ $(function(){
 
         $(this).addClass('single-product-image__tab--active');
         $($(this).attr('href')).addClass('single-product-product-images-block__lg-image--active');
+    });
+
+    // $('.promo-switcher__item').click(function(){
+    //         $('.promo-switcher__item').removeClass('promo-switcher__item--active');
+    //         $(this).addClass('promo-switcher__item--active');
+            
+    //     });
+    $('#promo-switcher--dark').click(function(){
+        $('.promo-switcher__item').removeClass('promo-switcher__item--active');
+        $(this).addClass('promo-switcher__item--active');
+        $('.promo-overlay').removeClass('promo-overlay--light');
+        $('.promo-overlay').addClass('promo-overlay--dark');
+    });
+    $('#promo-switcher--light').click(function(){
+        $('.promo-switcher__item').removeClass('promo-switcher__item--active');
+        $(this).addClass('promo-switcher__item--active');
+        $('.promo-overlay').removeClass('promo-overlay--dark');
+        $('.promo-overlay').addClass('promo-overlay--light');
     });
 
 
