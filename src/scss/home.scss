@@ -47,16 +47,20 @@ main {
 
 /* ПРОМО */
 .promo {
-    // width: 100%;
-    // height: 700px;
-    // background-image: url(../img/bg.jpg);
+    width: 100%;
+    height: 800px;
+}
+
+.promo-video {
+    width: 100%;
+    height: 800px;
+    // background-image: url(../img/promo-bg.jpg);
+    background-size: cover;
 }
 
 .promo-overlay {
-
-
     width: 100%;
-    height: 100%;
+    height: 800px;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -65,47 +69,40 @@ main {
     position: relative;
 
     picture {
-
         height: 300px;
     }
 
     picture img {
-
         height: 100%;
     }
 
     .promo-text {
-        position: absolute;
-        top: 40px;
-        left: 150px;
+
         font-size: 46px;
         color: $secondary-text-color;
+        text-shadow: $primary-text-color 0 0 10px;
         font-weight: bold;
+    }
+
+    .promo-text--top {
+        position: absolute;
+        top: 10%;
+        left: 150px;
+    }
+
+    .promo-text--bottom {
+        position: absolute;
+        bottom: 10%;
+        right: 150px;
+
     }
 }
 
-.promo-overlay--dark {
-    background: linear-gradient(rgba(69, 188, 232, 0.9), rgba(255, 255, 255, 0.9));
-}
-
-.promo-overlay--light {
-    background: linear-gradient(rgba(69, 188, 232, 0.9), rgba(255, 255, 255, 0.9));
-}
 
 
 
 
-.promo-video {
-    width: 100%;
-    height: 700px;
-    // background-image: url(../img/bg.jpg);
-}
 
-.promo-video--with-bg {
-    background-image: url(../img/bg.jpg);
-}
-
-.promo-video--withot-bg {}
 
 
 
@@ -120,25 +117,6 @@ main {
 
 
 
-.promo-switcher {
-    display: flex;
-    position: absolute;
-    right: 0;
-    top: 0;
-    gap: 15px;
-
-}
-
-.promo-switcher__item {
-    background-color: #fff;
-    padding: 3px 6px;
-    cursor: pointer;
-    opacity: .6;
-}
-
-.promo-switcher__item--active {
-    opacity: 1;
-}
 
 /* РАЗДЕЛИТЕЛЬ */
 

@@ -120,14 +120,14 @@ $(function(){
         $(this).addClass('promo-switcher__item--active');
         $('.promo-overlay').removeClass('promo-overlay--light');
         $('.promo-overlay').addClass('promo-overlay--dark');
-        $('.promo-video').removeClass('promo-video--with-bg');
+        // $('.promo-video').removeClass('promo-video--with-bg');
     });
     $('#promo-switcher--light').click(function(){
         $('.promo-switcher__item').removeClass('promo-switcher__item--active');
         $(this).addClass('promo-switcher__item--active');
         $('.promo-overlay').removeClass('promo-overlay--dark');
         $('.promo-overlay').addClass('promo-overlay--light');
-        $('.promo-video').addClass('promo-video--with-bg');
+        // $('.promo-video').addClass('promo-video--with-bg');
     });
 
 
